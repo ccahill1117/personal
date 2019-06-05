@@ -18,11 +18,12 @@ export default {
     return {
       aNumber: 1,
       someWords: "heyehhey!",
-      somePercentage: 10
+      somePercentage: 0
     }
   },
   created: function() {
     console.log('initially, aNumber is ...', this.aNumber);
+    this.progressCircle();
   },
   methods: {
     
@@ -34,12 +35,12 @@ export default {
       if (this.somePercentage == 100) {
         this.somePercentage = 0
       } else {
-        this.somePercentage += 1
+        this.somePercentage += 10
       }
     },
 
     progressCircle: function() {
-      nIntervId = setInterval(flashText, 100);
+      setInterval(this.percentageIncreasing, 1000);
     }
 
   }
