@@ -1,5 +1,11 @@
 # christophercahill.co
 
+## About
+
+This project was made with Vue.js and Vuetify Material Design Component Framework.
+
+
+
 ## Project setup
 ```
 npm install
