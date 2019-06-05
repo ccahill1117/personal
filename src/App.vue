@@ -37,13 +37,15 @@
 import HelloWorld from './components/HelloWorld'
 import Landing from './components/Landing'
 import Contact from './components/Contact'
+import Blog from './components/Blog'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Landing,
-    Contact
+    Contact,
+    Blog
 
   },
   data () {
