@@ -1,6 +1,8 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer app></v-navigation-drawer>
+    <!-- <v-navigation-drawer app>
+      <h2>nav drawer</h2>
+    </v-navigation-drawer> -->
     <v-toolbar app> 
       <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
       <router-link to="/">
