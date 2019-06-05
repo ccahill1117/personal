@@ -1,15 +1,17 @@
 <template>
   <div>
     <h1>Blog</h1>
+    <h2>Currently under construction!</h2> <v-progress-circular size=32 :value="somePercentage"></v-progress-circular>
     <div class="text-xs-center">
-      <v-progress-circular size=356 :value="somePercentage"></v-progress-circular>
+      <img :src=safetyIconLocation></img>
     </div>
-    <h1>{{aNumber}}</h1>
-    <v-btn light @click="increaseANumber()">This is a button</v-btn>
+    <!-- <h1>{{aNumber}}</h1>
+    <v-btn light @click="increaseANumber()">This is a button</v-btn> -->
   </div>
 </template>
 
 <script>
+import { setInterval } from 'timers';
 
 export default {
   name: 'Login',
@@ -18,12 +20,44 @@ export default {
     return {
       aNumber: 1,
       someWords: "heyehhey!",
-      somePercentage: 0
+      somePercentage: 0,
+      safetyIconLocation: "",
+      safetyIconArray: [
+        "/img/svg/ISO_7010_W001.svg",
+        "/img/svg/ISO_7010_W002.svg",
+        "/img/svg/ISO_7010_W003.svg",
+        "/img/svg/ISO_7010_W004.svg",
+        "/img/svg/ISO_7010_W005.svg",
+        "/img/svg/ISO_7010_W006.svg",
+        "/img/svg/ISO_7010_W007.svg",
+        "/img/svg/ISO_7010_W008.svg",
+        "/img/svg/ISO_7010_W009.svg",
+        "/img/svg/ISO_7010_W010.svg",
+        "/img/svg/ISO_7010_W011.svg",
+        "/img/svg/ISO_7010_W012.svg",
+        "/img/svg/ISO_7010_W013.svg",
+        "/img/svg/ISO_7010_W014.svg",
+        "/img/svg/ISO_7010_W015.svg",
+        "/img/svg/ISO_7010_W016.svg",
+        "/img/svg/ISO_7010_W017.svg",
+        "/img/svg/ISO_7010_W018.svg",
+        "/img/svg/ISO_7010_W019.svg",
+        "/img/svg/ISO_7010_W020.svg",
+        "/img/svg/ISO_7010_W021.svg",
+        "/img/svg/ISO_7010_W022.svg",
+        "/img/svg/ISO_7010_W023.svg",
+        "/img/svg/ISO_7010_W024.svg",
+        "/img/svg/ISO_7010_W025.svg",
+        "/img/svg/ISO_7010_W026.svg",
+        "/img/svg/ISO_7010_W027.svg",
+        "/img/svg/ISO_7010_W028.svg",
+        "/img/svg/ISO_7010_W029.svg",
+      ],
+      safetyIconIndex: 0 
     }
   },
   created: function() {
-    console.log('initially, aNumber is ...', this.aNumber);
-    this.progressCircle();
+    this.progress();
   },
   methods: {
     
@@ -39,10 +73,21 @@ export default {
       }
     },
 
-    progressCircle: function() {
-      setInterval(this.percentageIncreasing, 1000);
-    }
+    arrayIndexIncreasing: function() {
+      if (this.safetyIconIndex == 30) {
+        this.safetyIconIndex = 0
+      } else {
+        this.safetyIconIndex += 1
+      }
+      this.safetyIconLocation = this.safetyIconArray[this.safetyIconIndex]
+      console.log('safetyIconLocation',this.safetyIconLocation)
 
+    },
+
+    progress: function() {
+      setInterval(this.percentageIncreasing, 1000);
+      setInterval(this.arrayIndexIncreasing, 1500);
+    }
   }
 }
 
