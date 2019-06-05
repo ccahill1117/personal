@@ -3,7 +3,11 @@
     <v-navigation-drawer app></v-navigation-drawer>
     <v-toolbar app> 
       <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-      <v-toolbar-title>Christopher Thomas Cahill</v-toolbar-title>
+      <router-link to="/">
+        <v-btn flat>
+          <v-toolbar-title>Christopher Thomas Cahill</v-toolbar-title>
+        </v-btn>
+      </router-link>
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn flat>About</v-btn>
@@ -17,6 +21,9 @@
       </v-container>
     </v-content>
     <v-footer app class="pa-3">
+      <router-link to="/contact">
+        <v-btn flat>Contact</v-btn>
+      </router-link>
       <v-spacer></v-spacer>
       <div>&copy; {{ new Date().getFullYear() }}</div>
     </v-footer>
@@ -27,12 +34,14 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import Landing from './components/Landing'
+import Contact from './components/Contact'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Landing
+    Landing,
+    Contact
 
   },
   data () {
@@ -45,6 +54,9 @@ export default {
 
 <style>
 
+  a{
+    text-decoration: none;
+  }
 
 
 </style>
