@@ -12,9 +12,15 @@
       </router-link>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn flat>About</v-btn>
-        <v-btn flat>Blog</v-btn>
-        <v-btn flat>Work So Far</v-btn>
+      
+        <v-btn flat href="/#/about">About</v-btn> 
+        
+        <v-btn flat href="/#/blog">Blog</v-btn>       
+
+        <v-btn flat href="/#/work">Work So Far</v-btn>
+
+        <v-btn flat href="/#/sound">Sound</v-btn>
+
       </v-toolbar-items>
     </v-toolbar>
     <v-content>

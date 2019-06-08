@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>Blog</h1>
-    <h2>Currently under construction!</h2> <v-progress-circular size=32 :value="somePercentage"></v-progress-circular>
+    <h2>Currently under construction!</h2> 
+    <v-progress-linear :indeterminate="true"></v-progress-linear>
     <div class="text-xs-center">
       <img :src=safetyIconLocation></img>
     </div>
