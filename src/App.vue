@@ -21,6 +21,9 @@
 
         <v-btn flat href="/#/sound">Sound</v-btn>
 
+        <v-btn flat href="/#/squash">Squash</v-btn>
+
+
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
@@ -44,6 +47,9 @@ import HelloWorld from './components/HelloWorld'
 import Landing from './components/Landing'
 import Contact from './components/Contact'
 import Blog from './components/Blog'
+import Sound from './components/Sound'
+import Squash from './components/Squash'
+
 
 export default {
   name: 'App',
@@ -51,7 +57,9 @@ export default {
     HelloWorld,
     Landing,
     Contact,
-    Blog
+    Blog,
+    Sound,
+    Squash
 
   },
   data () {
