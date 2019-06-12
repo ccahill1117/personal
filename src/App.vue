@@ -1,10 +1,6 @@
 <template>
   <v-app dark>
-    <!-- <v-navigation-drawer app>
-      <h2>nav drawer</h2>
-    </v-navigation-drawer> -->
     <v-toolbar app> 
-      <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
       <router-link to="/">
         <v-btn flat>
           <v-toolbar-title>Christopher Thomas Cahill</v-toolbar-title>
@@ -12,22 +8,10 @@
       </router-link>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-      
-        <v-btn flat href="/#/about">About</v-btn> 
-        
-        <v-btn flat href="/#/blog">Blog</v-btn>       
-
-        <v-btn flat href="/#/work">Work So Far</v-btn>
-
-        <v-btn flat href="/#/sound">Sound</v-btn>
-
-        <v-btn flat href="/#/squash">Squash</v-btn>
-
-
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
-      <v-container fluid>
+      <v-container fluid class="landingContainer">
         <router-view></router-view>
       </v-container>
     </v-content>
@@ -49,6 +33,8 @@ import Contact from './components/Contact'
 import Blog from './components/Blog'
 import Sound from './components/Sound'
 import Squash from './components/Squash'
+import Wikiraces from './components/Wikiraces'
+import Subnav from './components/Subnav'
 
 
 export default {
@@ -59,7 +45,9 @@ export default {
     Contact,
     Blog,
     Sound,
-    Squash
+    Squash,
+    Wikiraces,
+    Subnav
 
   },
   data () {

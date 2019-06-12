@@ -5,6 +5,8 @@ import Contact from './components/Contact'
 import Blog from './components/Blog'
 import Sound from './components/Sound'
 import Squash from './components/Squash'
+import Wikiraces from './components/Wikiraces'
+import Subnav from './components/Subnav'
 
 
 Vue.use(Router)
@@ -35,6 +37,11 @@ export default new Router({
       path: '/squash',
       name: 'Squash',
       component: Squash
+    },
+    {
+      path: '/wiki',
+      name: 'WikiRaces',
+      component: Wikiraces
     }
   ]
 })
