@@ -23,13 +23,16 @@
 </template>
 
 <script>
-  export default {
+import Subnav from '../components/Subnav'
+
+export default {
     data: () => ({
       
-    })
-  }
+    }),
 
-import Subnav from './components/Subnav'
+    components: {Subnav},
+
+  }
 
 </script>
 

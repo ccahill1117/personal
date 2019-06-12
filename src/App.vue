@@ -60,8 +60,12 @@ export default {
 
 <style>
 
-  a{
+  a {
     text-decoration: none;
+  }
+
+  .landingContainer {
+    padding-top: 3px;
   }
 
 

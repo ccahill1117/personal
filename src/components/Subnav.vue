@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-md text-xs-center class="subNav">
     <v-layout align-center justify-center row>
       <v-flex xs2>      
         <v-btn light href="/#/about">About</v-btn>  
@@ -18,7 +18,6 @@
       </v-flex> 
     </v-layout>
   </v-container>
-
 </template>
 
 <script>
@@ -30,5 +29,9 @@
 </script>
 
 <style>
+
+.subNav {
+  padding: 0
+}
 
 </style>
