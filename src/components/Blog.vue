@@ -81,13 +81,13 @@ export default {
         this.safetyIconIndex += 1
       }
       this.safetyIconLocation = this.safetyIconArray[this.safetyIconIndex]
-      console.log('safetyIconLocation',this.safetyIconLocation)
+      // console.log('safetyIconLocation',this.safetyIconLocation)
 
     },
 
     progress: function() {
       setInterval(this.percentageIncreasing, 1000);
-      setInterval(this.arrayIndexIncreasing, 1500);
+      setInterval(this.arrayIndexIncreasing, 1000);
     }
   }
 }
