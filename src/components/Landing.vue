@@ -1,9 +1,4 @@
 <template>
-  <div>
-    <div>
-      <Subnav></Subnav>
-    </div>
-  <div>
   <v-container grid-list-md text-xs-center class="landingContainer">
     <v-layout align-center justify-center row fill-height=true>
       <v-flex xs3>      

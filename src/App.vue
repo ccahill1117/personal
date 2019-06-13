@@ -1,11 +1,25 @@
 <template>
   <v-app dark>
-    <v-toolbar app> 
+    <v-toolbar app>      
       <router-link to="/">
-        <v-btn flat>
-          <v-toolbar-title>Christopher Thomas Cahill</v-toolbar-title>
-        </v-btn>
+        <v-toolbar-title>
+          <span class="yourName">Christopher Thomas Cahill</span>
+        </v-toolbar-title>
       </router-link>
+        <v-menu :nudge-width="100">
+        <template v-slot:activator="{ on }">
+            <v-icon v-on="on" dark>arrow_drop_down</v-icon>
+        </template>
+        <v-list>
+          <v-list-tile
+            v-for="item in items"
+            :key="item"
+            @click="">
+            <v-list-tile-title v-text="item"></v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    
       <v-spacer></v-spacer>
       <v-toolbar-items>
       </v-toolbar-items>
@@ -24,7 +38,11 @@
     </v-footer>
   </v-app> 
 
+
+
 </template>
+
+
 
 <script>
 import HelloWorld from './components/HelloWorld'
@@ -52,6 +70,10 @@ export default {
   },
   data () {
     return {
+      items: [
+        'Work', 'Blog', 'Sound', 'Squash'
+      ]
+
       //
     }
   }
@@ -66,6 +88,10 @@ export default {
 
   .landingContainer {
     padding-top: 3px;
+  }
+
+  .yourName {
+    color: white;
   }
 
 
