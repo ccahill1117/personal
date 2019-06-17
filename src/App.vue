@@ -6,7 +6,6 @@
           <span class="yourName">Christopher Thomas Cahill</span>
         </v-toolbar-title>
       </router-link>
-
       <v-toolbar-items>
 
       <v-menu :nudge-width="100">
@@ -14,18 +13,25 @@
           <v-icon v-on="on" dark>arrow_drop_down</v-icon>
         </template>
         <v-list>
-          <v-list-tile
-            v-for="item in items"
-            :key="item"
-            @click="">
-            <v-list-tile-title v-text="item"></v-list-tile-title>
+          <v-list-tile>
+            <v-btn light href="/#/about">About</v-btn> 
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn href="/#/blog">Blog</v-btn>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn light href="/#/work">Work</v-btn>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn href="/#/squash">Squash</v-btn>
+          </v-list-tile>
+          <v-list-tile>
+            <v-btn light href="/#/sound">Sound</v-btn>
           </v-list-tile>
         </v-list>
       </v-menu>
 
-    </v-toolbar-items>
-
-      
+    </v-toolbar-items>      
     
       <v-spacer></v-spacer>
       <v-toolbar-items>
