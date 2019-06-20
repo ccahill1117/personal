@@ -7,7 +7,6 @@
         </v-toolbar-title>
       </router-link>
       <v-toolbar-items>
-
       <v-menu :nudge-width="100">
         <template v-slot:activator="{ on }">
           <v-icon v-on="on" dark>arrow_drop_down</v-icon>
