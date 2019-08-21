@@ -6,7 +6,8 @@
           <span class="yourName">Christopher Thomas Cahill</span>
         </v-toolbar-title>
       </router-link>
-      <v-toolbar-items>
+
+      <!-- <v-toolbar-items>
       <v-menu :nudge-width="100">
         <template v-slot:activator="{ on }">
           <v-icon v-on="on" dark>arrow_drop_down</v-icon>
@@ -29,8 +30,7 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-
-    </v-toolbar-items>      
+    </v-toolbar-items>       -->
     
       <v-spacer></v-spacer>
       <v-toolbar-items>
